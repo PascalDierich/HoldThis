@@ -12,7 +12,7 @@ func main() {
 		target := Get(os.Args[1]).Value
 		os.Chdir(target)
 		os.Setenv("PWD", target)
-		fmt.Println("cd", os.Getenv("PWD"))
+		fmt.Println(os.Getenv("PWD"))
 	} else {
 		// fmt.Println("HoldThis - Jump Program")
 		// fmt.Println("$ jump <name of hold>")
